@@ -5,10 +5,16 @@
 	"version": "0.2.0",
 	"configurations": [
 		{
-			"type": "chrome",
+			"name": "Attach to Chrome",
 			"request": "launch",
-			"name": "Open lab.html",
-			"file": "c:\\Users\\User\\Desktop\\Учёба\\курс 3\\web\\lab.html"
-		}
+			"type": "chrome",
+			"file": "c:\\Users\\User\\Desktop\\Учёба\\курс 3\\web\\index.html"
+		},
+		{
+			"type": "msedge",
+			"request": "launch",
+			"name": "Open index.html",
+			"file": "c:\\Users\\User\\Desktop\\Учёба\\курс 3\\web\\index.html"
+		},
 	]
 }
