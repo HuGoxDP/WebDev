@@ -1,76 +1,55 @@
-.PixelArt img 
-{
-		min-width: 48.4%;
-		max-width: 48.4%;
-		height: auto;
-		border: solid;	
+
+.Summarycontainer {
+min-height: 800px;
+}
+
+.Portfoliocontainer {
+	min-height: 500px;
+}
+
+.aboutcontainer {
+	min-height: 500px;
+}
+
+body {
+	
+	font-family: Arial, sans-serif;
+	margin: 2%;
+	padding: 2%;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	/* Три столбца с равной шириной */
+	grid-gap: 10px;
+	/* Расстояние между элементами */
+	padding: 20px;
+}
+
+.grid-container_2items{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		/* Три столбца с равной шириной */
+		grid-gap: 10px;
+		/* Расстояние между элементами */
+		padding: 20px;
 	}
 
-.image-container {
-	display: flex;
-	align-items: flex-start;
+
+.grid-item {
+	border: 1px solid #ddd;
+	padding: 1px;
+	text-align: center;
 }
 
-.large-image {
-	border: solid;
-	min-width: 48.4%;
-	max-width: 48.4%;
-	margin-right: 10px;
+.grid-item img {
+	max-width: 100%;
+	max-height: 100%;
+	/* Добавляем максимальную высоту для сохранения пропорций */
+	object-fit: contain;
+	/* Масштабируем изображения так, чтобы они поместились в свой контейнер */
 }
-
-.small-images {
-	margin-top: 10%;
-	margin-bottom: 10%;
-	display: flex;
-	flex-direction: column;
-}
-
-.small-images img {
-	border: solid;
-	min-width: 100.4%;
-	max-width: 100.4%;
-	margin-bottom: 10px;
-	margin-top: 10px;
-}
-
-
-.Godot img {
-		min-width: 48.4%;
-			max-width: 48.4%;
-			height: auto;
-			border: solid;
-}
-
-.Summarycontainer{
-	background-color: rgb(153, 134, 106);
-	padding-left: 1%;
-	padding-right: 1%;
-	padding-bottom: 1%;
-	padding-top: 1%;
-}
-.Portfoliocontainer {
-		background-color: rgb(143, 122, 93);
-			padding-left: 1%;
-			padding-right: 1%;
-			padding-bottom: 1%;
-			padding-top: 1%;
-}
-.aboutcontainer {
-		background-color: rgb(153, 134, 106);
-			padding-left: 1%;
-			padding-right: 1%;
-			padding-bottom: 1%;
-			padding-top: 1%;
-}
-.Contactcontainer {
-		background-color: #8f7a5d;
-			padding-left: 1%;
-			padding-right: 1%;
-			padding-bottom: 1%;
-			padding-top: 1%;
-}
-
-
 
 #menu__toggle {
 	opacity: 0;
@@ -158,19 +137,40 @@ body
 {
 	background-image: url("Fon.jpg");
 }
-
+		h1 {
+			color: rgb(151, 96, 78);
+			}
+	
+		p {
+		 color: rgb(151, 96, 78);
+		}
+	
+		li {
+			color: rgb(151, 96, 78);
+		}
 
  /*Extra small devices (phones, 600px and down)*/
 @media only screen and (max-width: 600px) {
-	body {
-		width: 80%;
-		margin: 0 auto;
-		
-	}	
-
-	h1 {
-			font-size: 100%;
-			}
+	
+			.grid-container {
+					display: grid;
+					grid-template-columns: repeat(2, 1fr);
+					/* Три столбца с равной шириной */
+					grid-gap: 10px;
+					/* Расстояние между элементами */
+					padding: 20px;
+				}
+				h1 {
+						font-size: 150%;
+					}
+				
+					p {
+						font-size: 150%;
+					}
+				
+					li {
+						font-size: 150%;
+					}
 
 
 .menu__box {
@@ -190,14 +190,25 @@ body
 
  /*Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-body {
-		width: 80%;
-		margin: 0 auto;
-		padding: 50px 20px 20px 20px;
-	}
-	h1{
-		font-size: 120%;
-	}
+			.grid-container {
+					display: grid;
+					grid-template-columns: repeat(2, 1fr);
+					/* Три столбца с равной шириной */
+					grid-gap: 10px;
+					/* Расстояние между элементами */
+					padding: 20px;
+				}
+				h1 {
+						font-size: 250%;
+					}
+				
+					p {
+						font-size: 150%;
+					}
+				
+					li {
+						font-size: 150%;
+					}
 
 	.menu__item {
 		display: block;
@@ -213,15 +224,26 @@ body {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-	body {
-			width: 80%;
-			margin: 0 auto;
-			padding: 50px 20px 20px 20px;
-		}
-	
+
+				.grid-container {
+						display: grid;
+						grid-template-columns: repeat(2, 1fr);
+						/* Три столбца с равной шириной */
+						grid-gap: 10px;
+						/* Расстояние между элементами */
+						padding: 20px;
+					}
 				h1 {
-					font-size: 120%;
-				}
+						font-size: 250%;
+					}
+				
+					p {
+						font-size: 150%;
+					}
+				
+					li {
+						font-size: 150%;
+					}
 		
 				.menu__item {
 					display: block;
@@ -235,17 +257,31 @@ body {
 				}
 }
 
- /*Large devices (laptops/desktops, 992px and up)*/ 
+ /*Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-	body {
-			width: 80%;
-			margin: 0 auto;
-			padding: 50px 20px 20px 20px;
-		}
-	
+
+
+			.grid-container
+			{
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			/* Три столбца с равной шириной */
+			grid-gap: 10px;
+			/* Расстояние между элементами */
+			padding: 20px;
+			}
+
 				h1 {
-					font-size: 120%;
-				}
+						font-size: 250%;
+					}
+				
+					p {
+						font-size: 150%;
+					}
+				
+					li {
+						font-size: 150%;
+					}
 		
 				.menu__item {
 					display: block;
@@ -262,15 +298,24 @@ body {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
 	
-	
-		body {
-			width: 80%;
-			margin: 0 auto;
-			padding: 50px 20px 20px 20px;
-		}
+			.grid-container {
+					display: grid;
+					grid-template-columns: repeat(3, 1fr);
+					/* Три столбца с равной шириной */
+					grid-gap: 10px;
+					/* Расстояние между элементами */
+					padding: 20px;
+				}
 	
 				h1 {
-					font-size: 140%;
+					font-size: 250%;
+				}
+				p{
+					font-size: 150%;
+				}
+				li
+				{
+					font-size: 150%;
 				}
 		
 				.menu__item {
