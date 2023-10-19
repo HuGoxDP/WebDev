@@ -27,14 +27,6 @@ body {
 	padding: 20px;
 }
 
-.grid-container_2items{
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		/* Три столбца с равной шириной */
-		grid-gap: 10px;
-		/* Расстояние между элементами */
-		padding: 20px;
-	}
 
 
 .grid-item {
