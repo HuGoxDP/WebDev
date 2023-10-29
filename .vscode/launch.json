@@ -8,13 +8,13 @@
 			"name": "Attach to Chrome",
 			"request": "launch",
 			"type": "chrome",
-			"file": "c:\\Users\\User\\Desktop\\Учёба\\курс 3\\web\\index.html"
+			"file": "c:\\Users\\User\\Desktop\\Uchoba\\Course 3\\web\\index.html"
 		},
 		{
 			"type": "msedge",
 			"request": "launch",
 			"name": "Open index.html",
-			"file": "c:\\Users\\User\\Desktop\\Учёба\\курс 3\\web\\index.html"
+			"file": "c:\\Users\\User\\Desktop\\Uchoba\\Course 3\\web\\index.html"
 		},
 	]
 }
