@@ -181,7 +181,7 @@ header ul li:hover {
 
 
 .grid-container .grid-item {
-	border: 1px solid #ddd;
+	border: 1px solid rgb(151, 96, 78);
 	padding: 1px;
 	text-align: center;
 }
@@ -206,6 +206,11 @@ p {
 li {
 		color: rgb(151, 96, 78);
 	}
+.Contact-text
+{
+		color: rgb(151, 96, 78);
+
+}
 
 
 
